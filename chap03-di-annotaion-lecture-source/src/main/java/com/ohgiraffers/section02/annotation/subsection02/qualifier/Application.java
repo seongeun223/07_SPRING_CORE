@@ -16,7 +16,7 @@ public class Application {
 
         // 스프링 컨텍스트에 등록된 같은 타입의 bean이 3개나 있다는 뜻
         // 한 개만 필요하다
-        // expected
+        // expected single matching bean but found 3: charmander,pikachu,squirtle
 
         PokemonService pokemonService = context.getBean("pokemonServiceQualifier", PokemonService.class);
 
