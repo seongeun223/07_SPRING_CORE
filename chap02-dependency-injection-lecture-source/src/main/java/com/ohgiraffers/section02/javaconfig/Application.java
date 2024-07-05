@@ -2,6 +2,7 @@ package com.ohgiraffers.section02.javaconfig;
 
 import com.ohgiraffers.common.MemberDTO;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
 public class Application {
@@ -10,7 +11,7 @@ public class Application {
 
         // Java 설정 파일을 기반으로 ApplicationContext 객체 생성
         ApplicationContext context =
-                new GenericXmlApplicationContext(ContextConfiguration.class);
+                new AnnotationConfigApplicationContext(ContextConfiguration.class);
 
         MemberDTO member = context.getBean("member", MemberDTO.class);
 
