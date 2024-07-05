@@ -3,11 +3,18 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+<!--    <bean id="account" class="com.ohgiraffers.common.PersonalAccount">-->
+<!--&lt;!&ndash; 생성자 순서에 의해서 index 0번은 은행코드-->
+<!--     생성자 순서에 의해서 index 1번은 계좌번호 &ndash;&gt;-->
+<!--        <constructor-arg index="0" value="20"/>-->
+<!--        <constructor-arg index="1" value="110-234-56780"/>-->
+<!--    </bean>-->
+
     <bean id="account" class="com.ohgiraffers.common.PersonalAccount">
-<!-- 생성자 순서에 의해서 index 0번은 은행코드
-     생성자 순서에 의해서 index 1번은 계좌번호 -->
-        <constructor-arg index="0" value="20"/>
-        <constructor-arg index="1" value="110-234-56780"/>
+        <!-- 생성자 순서에 의해서 index 0번은 은행코드
+             생성자 순서에 의해서 index 1번은 계좌번호 -->
+        <constructor-arg name="bankCode" value="20"/>
+        <constructor-arg name="accNo" value="110-234-56780"/>
     </bean>
 
 <!-- 1. 생성자 주입 -->
