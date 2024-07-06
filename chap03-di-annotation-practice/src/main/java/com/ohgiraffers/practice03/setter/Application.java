@@ -1,5 +1,4 @@
 package com.ohgiraffers.practice03.setter;
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
