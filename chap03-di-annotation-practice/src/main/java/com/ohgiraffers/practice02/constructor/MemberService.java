@@ -9,8 +9,12 @@ import java.util.Map;
 @Service
 public class MemberService {
 
-    @Autowired
     private MemberDAO memberDAO;
+
+    @Autowired
+    public MemberService(MemberDAO memberDAO) {
+        this.memberDAO = memberDAO;
+    }
 
     public Map<Long, MemberDTO> selectMember() {
         return memberDAO.selectMember();
