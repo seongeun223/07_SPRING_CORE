@@ -1,8 +1,6 @@
 package com.ohgiraffers.practice02.constructor;
-
 import com.ohgiraffers.common.MemberDTO;
 import org.springframework.stereotype.Repository;
-
 import java.util.HashMap;
 import java.util.Map;
 
