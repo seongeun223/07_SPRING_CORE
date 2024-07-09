@@ -92,11 +92,7 @@ public class Application {
         try {
             Account acc = (Account) constructors[0].newInstance("20", "110-223-123456", "1234", 10000);
             System.out.println(acc.getBalance());
-        } catch (InstantiationException e) {
-            throw new RuntimeException(e);
-        } catch (IllegalAccessException e) {
-            throw new RuntimeException(e);
-        } catch (InvocationTargetException e) {
+        } catch (InstantiationException | InvocationTargetException | IllegalAccessException e) {
             throw new RuntimeException(e);
         }
 
@@ -120,11 +116,7 @@ public class Application {
 
         try {
             System.out.println(getBalanceMethod.invoke((Account)constructors[2].newInstance()));
-        } catch (IllegalAccessException e) {
-            throw new RuntimeException(e);
-        } catch (InvocationTargetException e) {
-            throw new RuntimeException(e);
-        } catch (InstantiationException e) {
+        } catch (IllegalAccessException | InstantiationException | InvocationTargetException e) {
             throw new RuntimeException(e);
         }
     }

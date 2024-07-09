@@ -67,7 +67,7 @@ public class LoggingAspect {
     * Around Advice
     * - 조인 포인트를 완전히 장악한다.
     * - 앞에서의 어드바이스 모두 around 어드바이스로 조합 가능하다.
-    * - AroundAdvice의 조인 포인튼 매개변수는 ProceedingJoinPoint 로 고정되어 있기 때문에
+    * - AroundAdvice의 조인포인트 매개변수는 ProceedingJoinPoint 로 고정되어 있기 때문에
     * - JoinPoint의 하위 인터페이스로 원본 조인포인트의 진행 시점을 제어할 수 있다.
     * - 조인포인읕 진행하는 호출을 잊는 경우가 많이 발생하기 때문에
     * - 최소한의 요건을 충족하면서도 가장 기능이 약한 어드바이스를 쓰는게 바람직하다.
